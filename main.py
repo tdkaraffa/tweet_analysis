@@ -37,6 +37,7 @@ def main():
 # screenname and numberretweets not being inputted, despite showing up at line 21 print...
 # what's happening between those? something with the clean function? something with default values?
 # nlp!
+# work on cleaning function more
 
 
 if __name__ == '__main__':
