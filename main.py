@@ -28,16 +28,10 @@ def main():
 					clean_text(datum)
 		insert_data_into_db(tweets, 'twitter', 'tweets', db_conn)
 
-
-# -m on_conflict_do_nothing added to db.py to handle duplicates
-# 		renamed screenname and numberretweets
 # to do
-
-
 # cast date into date type
 # nlp!
 # work on cleaning function more
-
 
 if __name__ == '__main__':
 	main()

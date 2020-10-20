@@ -15,7 +15,7 @@ def geo_query(api, search_text, search_coordinates, search_radius='30mi'):
 	else:
 		full_search = f'{search_text}'
 	full_tweets = [tweet for tweet in
-				   tw.Cursor(api.search, q=full_search, tweet_mode='extended', lang='en', count=10).items() if
+				   tw.Cursor(api.search, q=full_search, tweet_mode='extended', lang='en', count=5).items() if
 				   (tweet.retweeted == False) & (tweet.full_text[:2] != 'RT')]
 	tweets = [
 		{'id': tweet.id, 'query': search_text, 'date': tweet.created_at.strftime("%Y-%m-%d %H:%M:%S"), 'text': tweet.full_text,
